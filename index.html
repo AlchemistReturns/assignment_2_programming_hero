@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -111,17 +114,17 @@
             <h2>Calculate your BMI</h2>
             <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             <div id="bmi-form-grid">
-                <div id="bmi-form-grid-cell-1">Height/cm</div>
-                <div id="bmi-form-grid-cell-2">Weight/kg</div>
-                <div id="bmi-form-grid-cell-3">Age</div>
-                <div id="bmi-form-grid-cell-4">
-                    <p>Sex</p>
-                    <p class="rotate">></p>
-                </div>
-                <div id="bmi-form-grid-cell-5">
-                    <p>Select an activity factor</p>
-                    <p class="rotate">></p>
-                </div>
+                <input id="bmi-form-grid-cell-1" placeholder="Height/cm" type="text" >
+                <input id="bmi-form-grid-cell-2" placeholder="Weight/kg" type="text">
+                <input id="bmi-form-grid-cell-3" placeholder="Age" type="text">
+                <select id="bmi-form-grid-cell-4">
+                    <option value="sex" selected disabled>Sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                <select id="bmi-form-grid-cell-5">
+                    <option value="activity" selected disabled>Select an activity factor</option>
+                </select>
             </div>
             <button class="active">Calculate</button>
         </div>
