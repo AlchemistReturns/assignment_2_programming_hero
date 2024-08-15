@@ -59,6 +59,10 @@ body {
     margin-bottom: 20px;
 }
 
+#shape {
+    font-family: cursive;
+}
+
 #header-details-description {
     margin-bottom: 20px;
 }
@@ -66,7 +70,7 @@ body {
 .header-details-button {
     padding: 8px;
     border-radius: 20px;
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0);
     color: white;
     border: 1px solid white;
 }
@@ -98,6 +102,10 @@ body {
 #header-image-card-1 {
     grid-row-start: 2;
     grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 8px;
 }
 
 #header-image-card-2 {
@@ -122,6 +130,10 @@ body {
 
 #habits-title {
     font-size: 2rem;
+}
+
+#habits-description, .habit-card>p {
+    color: #888;
 }
 
 #habits-cards {
@@ -152,17 +164,27 @@ body {
     align-items: center;
     padding: 20px;
     gap: 8px;
+    box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);
+}
+
+#run-content {
+    max-width: 500px;
 }
 
 #run-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 400px;
 }
 
 #run-content > h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+}
+
+#run-content > p {
+    color: #888;
 }
 
 #run-content > button {
@@ -179,17 +201,95 @@ body {
     width: 100%;
 }
 
+#bmi {
+    color: white;
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+#bmi > p {
+    color: #888;
+}
+
+#bmi-calculator {
+    color: white;
+    display: flex;
+    background-color: #444;
+    justify-content: space-between;
+    padding: 20px 300px; 
+    gap: 20px;
+}
+
+#bmi-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#bmi-chart-grid {
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    grid-template-columns: repeat(2, 150px);
+}
+
+#bmi-chart-grid > div {
+    border: 1px solid #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bmi-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#bmi-form > p {
+    color: #888;
+}
+
+#bmi-form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px 10px;
+}
+
+#bmi-form-grid > div {
+    background-color: #777;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bmi-form-grid-cell-5 {
+    grid-column: 1 / 3; 
+}
 
 
+#bmi-form > button {
+    color: white;
+    border: none;
+    width: 150px;
+    padding: 8px;
+}
 
 
 .active {
     background-color: #e6533c;
     border-radius: 20px;
+    font-weight: bold;
+}
+
+.rotate {
+    transform: rotateZ(90deg);
 }
 
 @media (min-width: 993px) {
-    #hero, #habits {
+    #hero, #habits, #bmi {
         padding: 0 100px;
     }
     #navbar-menu {
@@ -204,7 +304,7 @@ body {
     #navbar-links {
         display: none;
     }
-    #hero, #habits {
+    #hero, #habits, #bmi-calculator, #bmi {
         padding: 0 10px;
     }
     #header {
@@ -220,5 +320,8 @@ body {
         flex-direction: column;
         margin-left: 20px;
         margin-right: 20px;
+    }
+    #bmi-calculator {
+        flex-direction: column;
     }
 }
