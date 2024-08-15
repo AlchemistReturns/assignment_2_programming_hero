@@ -115,8 +115,9 @@ body {
     align-items: center;
     gap: 8px;
     color: white;
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 #habits-title {
@@ -139,6 +140,46 @@ body {
     border-radius: 100px;
 }
 
+#run {
+    color:white;
+    display: flex;
+    background-color:#444;
+    justify-content: space-between;
+    max-width: 1060px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 16px;
+    align-items: center;
+    padding: 20px;
+    gap: 8px;
+}
+
+#run-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#run-content > h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#run-content > button {
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#run-image>img {
+    border-radius: 16px;
+    margin: auto;
+    width: 100%;
+}
+
+
 
 
 
@@ -153,6 +194,9 @@ body {
     }
     #navbar-menu {
         display: none;
+    }
+    #run-content > button {
+        width: 300px;
     }
 }
 
@@ -171,5 +215,10 @@ body {
     }
     #habits-cards {
         flex-direction: column;
+    }
+    #run {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
