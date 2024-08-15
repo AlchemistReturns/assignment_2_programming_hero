@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+
+#hero {
+    background: linear-gradient(to top, #111, #777);
+    
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+}
+
+#navbar-title {
+    font-size: 2rem;
+    color: #e6533c;
+}
+
+#navbar-links {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    gap: 25px;
+    padding: 8px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    width: 80px;
+    text-align: center;
+}
+
+.navbar-menu-line {
+    width: 20px;
+    margin-bottom: 5px;
+    background-color: white;
+    height: 2px;
+}
+
+#header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-details-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#header-details-description {
+    margin-bottom: 20px;
+}
+
+.header-details-button {
+    padding: 8px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+#header-image-container {
+    background-image: url("./images/heroimage.png");
+    width: 50%;
+    height: 580px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
+}
+
+.header-image-card {
+   background-color: rgba(255, 255, 255, 0.1);
+   max-width: 200px;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid rgba(255, 255, 255, 0.65);
+   border-radius: 20px;
+}
+
+#header-image-card-1 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+#header-image-card-2 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+#habits {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+.active {
+    background-color: #e6533c;
+    border-radius: 20px;
+}
+
+@media (min-width: 993px) {
+    #hero {
+        padding: 0 80px;
+    }
+    #navbar-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    #navbar-links {
+        display: none;
+    }
+    #hero {
+        padding: 0 10px;
+    }
+    #header {
+        flex-direction: column;
+    }
+    #header-image-container {
+        width: 100%;
+    }
+}
