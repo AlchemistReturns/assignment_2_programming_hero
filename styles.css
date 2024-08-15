@@ -277,6 +277,53 @@ body {
     padding: 8px;
 }
 
+#team {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#team > h4, #team > p {
+    text-align: center;
+}
+
+#team > p {
+    color: #888;
+}
+
+#team-members {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    background-color: #777;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px 10px;
+}
+
+.team-member {
+    background-size: cover;
+    background-position: center;
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.team-member > p {
+    color: #aaa;
+}
+
+
+
+
 
 .active {
     background-color: #e6533c;
@@ -307,6 +354,9 @@ body {
     #hero, #habits, #bmi-calculator, #bmi {
         padding: 0 10px;
     }
+    #bmi-calculator {
+        padding: 20px 10px;
+    }
     #header {
         flex-direction: column;
     }
@@ -323,5 +373,9 @@ body {
     }
     #bmi-calculator {
         flex-direction: column;
+    }
+    #team-members {
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: auto;
     }
 }
